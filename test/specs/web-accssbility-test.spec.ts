@@ -11,15 +11,15 @@ describe('Web Accessibility Test', () => {
 		expect(result.violations.length).to.be.equal( 0,`${browser.getUrl()} doesn't pass Accessibility Test`);
 	});
 
-	it('list out all the rules of WCAG', () => {
-		browser.url('/');     		//add any additional path/endpoint to baseURL.
-    let result = wat.getRules();
-    console.log(result);
-	});
-
-	it('list out the WCAG best practice', () => {
-		browser.url('/');     		//add any additional path/endpoint to baseURL.
-		let result = wat.getBestPractice();
-		console.log(result);
-	});
+	// it('list out all the rules of WCAG', () => {
+	// 	browser.url('/');     		//add any additional path/endpoint to baseURL.
+  //   let result = wat.getRules();
+  //   console.log(result);
+	// });
+	//
+	// it('list out the WCAG best practice', () => {
+	// 	browser.url('/');     		//add any additional path/endpoint to baseURL.
+	// 	let result = wat.getBestPractice();
+	// 	console.log(result);
+	// });
 });
